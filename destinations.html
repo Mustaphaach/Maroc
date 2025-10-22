@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations - Moon of Morocco</title>
+  <link rel="stylesheet" href="./destinations.css">
+<link rel="icon" type="image/png" href="https://i.postimg.cc/G2PR7mxF/d9a1cc7a-51df-4755-9779-803112fbea92-removebg-preview.png">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-content">
+        <img src="https://i.postimg.cc/G2PR7mxF/d9a1cc7a-51df-4755-9779-803112fbea92-removebg-preview.png" alt="Moon of Morocco" class="preloader-logo">
+      </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="indicator"></div>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo-container">
+  <img src="https://i.postimg.cc/G2PR7mxF/d9a1cc7a-51df-4755-9779-803112fbea92-removebg-preview.png" alt="Moon of Morocco Logo" class="nav-logo">
+</div>
+
+    <div>
+      <div><a href="index.html">Home</a></div>
+      <div><a href="holidays.html">Holidays</a></div>
+      <div class="active"><a href="destinations.html">Destinations</a></div>
+      <div><a href="flights.html">Flights</a></div>
+      <div><a href="offers.html">Offers</a></div>
+      <div><a href="contact.html">Contact</a></div>
+      <div class="svg-container">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+        </svg>
+      </div>
+      <div class="svg-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+        </svg>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">EXPLORE MOROCCO</div>
+      <h1 class="hero-title">Discover Morocco's Magic</h1>
+      <p class="hero-subtitle">From ancient medinas to golden deserts, explore the most captivating destinations</p>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="container">
+      <h2 class="section-title">Interactive Map</h2>
+      <p class="section-subtitle">Click on any destination to explore</p>
+      <div class="map-container" id="map-container">
+        <!-- Map will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations Grid -->
+  <section class="destinations-section">
+    <div class="container">
+      <h2 class="section-title">Top Destinations</h2>
+      <div class="destinations-grid" id="destinations-grid">
+        <!-- Destinations will be dynamically inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Regions Section -->
+  <section class="regions-section">
+    <div class="container">
+      <h2 class="section-title">Explore by Region</h2>
+      <div class="regions-grid">
+        <div class="region-card" data-region="north">
+          <div class="region-image" style="background-image: url('https://images.unsplash.com/photo-1516985212057-1997dfa07a4d?w=800')"></div>
+          <div class="region-content">
+            <h3>Northern Morocco</h3>
+            <p>Chefchaouen, Tangier, Tetouan</p>
+            <button class="region-btn">Explore Region</button>
+          </div>
+        </div>
+        <div class="region-card" data-region="imperial">
+          <div class="region-image" style="background-image: url('https://images.unsplash.com/photo-1570789210967-2cac24afeb00?w=800')"></div>
+          <div class="region-content">
+            <h3>Imperial Cities</h3>
+            <p>Fes, Marrakech, Meknes, Rabat</p>
+            <button class="region-btn">Explore Region</button>
+          </div>
+        </div>
+        <div class="region-card" data-region="coast">
+          <div class="region-image" style="background-image: url('https://images.unsplash.com/photo-1502933691298-84fc14542831?w=800')"></div>
+          <div class="region-content">
+            <h3>Atlantic Coast</h3>
+            <p>Essaouira, Agadir, Casablanca</p>
+            <button class="region-btn">Explore Region</button>
+          </div>
+        </div>
+        <div class="region-card" data-region="desert">
+          <div class="region-image" style="background-image: url('https://images.unsplash.com/photo-1519974719765-e6559eac2575?w=800')"></div>
+          <div class="region-content">
+            <h3>Sahara & Desert</h3>
+            <p>Merzouga, Ouarzazate, Zagora</p>
+            <button class="region-btn">Explore Region</button>
+          </div>
+        </div>
+        <div class="region-card" data-region="mountains">
+          <div class="region-image" style="background-image: url('https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800')"></div>
+          <div class="region-content">
+            <h3>Atlas Mountains</h3>
+            <p>Imlil, Toubkal, Berber Villages</p>
+            <button class="region-btn">Explore Region</button>
+          </div>
+        </div>
+        <div class="region-card" data-region="south">
+          <div class="region-image" style="background-image: url('https://images.unsplash.com/photo-1564053489984-317bbd824340?w=800')"></div>
+          <div class="region-content">
+            <h3>Southern Morocco</h3>
+            <p>Dades Valley, Todra Gorge, Skoura</p>
+            <button class="region-btn">Explore Region</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Tips Section -->
+  <section class="tips-section">
+    <div class="container">
+      <h2 class="section-title">Travel Tips</h2>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+            </svg>
+          </div>
+          <h3>Best Time to Visit</h3>
+          <p>Spring (March-May) and Fall (September-November) offer ideal weather across Morocco.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+            </svg>
+          </div>
+          <h3>Currency & Money</h3>
+          <p>Moroccan Dirham (MAD). ATMs widely available. Cash preferred in markets and small shops.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
+            </svg>
+          </div>
+          <h3>Language</h3>
+          <p>Arabic and Berber are official. French widely spoken. English in tourist areas.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+            </svg>
+          </div>
+          <h3>Safety</h3>
+          <p>Morocco is generally safe. Stay alert in crowded areas and use registered guides.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Moon of Morocco</h4>
+          <p>Your gateway to authentic Moroccan experiences</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="holidays.html">Holidays</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: info@moonofmorocco.com</p>
+          <p>Phone: +212 123 456 789</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Moon of Morocco. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./destinations.js"></script>
+</body>
+</html>
